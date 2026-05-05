@@ -1,0 +1,193 @@
+<!DOCTYPE html> 
+<html lang="th"> 
+<head> 
+<meta charset="UTF-8"> 
+<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+<title>Dino kub</title> 
+<link 
+href="https://fonts.googleapis.com/css2?family=Mitr:wght@300;400;500&display=swap" 
+rel="stylesheet"> 
+<style> 
+:root{ 
+    /* ปรับโทนสีเป็น ดำ-น้ำเงิน */
+    --bg:#0b0e14; 
+    --main:#1e90ff; 
+    --dark:#ffffff; 
+    --white:#161b22; 
+    --glow:rgba(30,144,255,0.3); 
+} 
+*{margin:0;padding:0;box-sizing:border-box;font-family:'Mitr',sans-serif;} 
+body{ 
+background:var(--bg); 
+display:flex; 
+justify-content:center; 
+color: #fff;
+} 
+.container{ 
+max-width:500px; 
+width:100%; 
+padding:20px 15px 40px; 
+} 
+.section{ 
+background:var(--white); 
+border-radius:20px; 
+padding:25px 20px; 
+margin-bottom:20px; 
+box-shadow:0 8px 20px rgba(0,0,0,0.3); 
+border:1px solid rgba(30,144,255,0.3); 
+} 
+h1,h2,h3{color:var(--main); margin-bottom: 15px;} 
+.center{text-align:center;} 
+.logo{ 
+width:150px;height:150px; 
+border-radius:50%; 
+overflow:hidden; 
+margin:0 auto 20px; 
+box-shadow:0 6px 20px var(--glow); 
+border: 2px solid var(--main);
+} 
+.logo img{width:100%;height:100%;object-fit:cover;} 
+.badges{ 
+display:flex; 
+flex-wrap:wrap; 
+justify-content:center; 
+gap:10px; 
+margin-bottom:20px; 
+} 
+.badge{ 
+background:rgba(30,144,255,0.1); 
+padding:8px 16px; 
+border-radius:25px; 
+border: 1px solid var(--main);
+font-size:13px; 
+color:var(--main); 
+} 
+.btn{ 
+display:block; 
+text-align:center; 
+padding:14px; 
+border-radius:25px; 
+text-decoration:none; 
+margin-top:15px; 
+font-weight:500; 
+transition: 0.3s;
+} 
+.btn-outline{ 
+background:transparent; 
+border:2px dashed var(--main); 
+color:var(--main); 
+} 
+.btn-main{ 
+background:var(--main); 
+color:#fff; 
+box-shadow: 0 4px 15px var(--glow);
+} 
+.btn:hover{ transform: translateY(-2px); opacity: 0.9; }
+.step{ 
+display:flex; 
+align-items:center; 
+gap:12px; 
+margin-bottom:12px; 
+} 
+.step-num{ 
+background:var(--main); 
+color:#fff; 
+width:26px;height:26px; 
+border-radius:50%; 
+display:flex; 
+align-items:center; 
+justify-content:center; 
+font-size:13px; 
+} 
+.price-row{ 
+display:flex; 
+justify-content:space-between; 
+margin-bottom:10px; 
+background:rgba(255,255,255,0.05); 
+padding:10px 15px; 
+border-radius:15px; 
+} 
+.price-tag{ 
+background:var(--main); 
+color:#fff; 
+padding:3px 12px; 
+border-radius:20px; 
+font-size:14px; 
+} 
+.footer{ 
+text-align:center; 
+margin-top:30px; 
+} 
+.socials{ 
+display:flex; 
+gap:8px; 
+justify-content:center; 
+margin-top:15px; 
+} 
+.socials a{ 
+flex:1; 
+max-width:120px; 
+text-align:center; 
+padding:10px; 
+border-radius:25px; 
+background:var(--white); 
+text-decoration:none; 
+color:#fff; 
+font-size:13px; 
+border:1px solid var(--main); 
+transition: 0.3s;
+} 
+.socials a:hover{ background: var(--main); }
+.small{font-size:12px; opacity:0.5; margin-top:20px; color: #fff;} 
+</style> 
+</head> 
+<body> 
+<div class="container"> 
+<!-- ====== HEADER ====== --> 
+<div class="section center" style="border:none;box-shadow:none;background:transparent;"> 
+<div class="logo"> 
+<img src="https://postimg.cc/mP5sj5fD" alt="logo"> 
+</div> 
+<h1>Dino kub</h1> 
+<p style="color:var(--dark);opacity:.8;margin:10px 0 20px;"> 
+ยินดีต้อนรับสู่บริการคุณภาพสูง
+</p> 
+<div class="badges"> 
+<div class="badge">🎨 รับทําดิส</div> 
+<div class="badge">💎 รับทําระบบ</div> 
+<div class="badge">💧 ทําเว็บ</div> 
+</div> 
+
+<!-- ====== ขั ้นตอน ====== --> 
+<div class="section"> 
+<h2>📝 ขั้นตอนสั่งงาน</h2> 
+<div class="step"><div class="step-num">1</div><div>กดรับยศ</div></div> 
+<div class="step"><div class="step-num">2</div><div>กด Ticket</div></div> 
+<div class="step"><div class="step-num">3</div><div>รอเจ้าหน้าที่ตอบกลับ</div></div> 
+<div class="step"><div class="step-num">4</div><div>บรีฟรายละเอียดงาน</div></div> 
+<div class="step"><div class="step-num">5</div><div>ชําระเงินเพื่อรอคิว</div></div> 
+</div> 
+
+<!-- ====== ราคา ====== --> 
+<div class="section"> 
+<h2>💰 ราคางาน</h2> 
+<div class="price-row"><span>ดิสส่วนตัว</span><span class="price-tag">79 ฿</span></div> 
+<div class="price-row"><span>ดิสร้านค้า</span><span class="price-tag">99 ฿</span></div> 
+<div class="price-row"><span>ดิสคอมมู</span><span class="price-tag">199 ฿</span></div> 
+</div> 
+
+<!-- ====== ติดต่อ ====== --> 
+<div class="footer"> 
+<a href="https://discord.gg/eHcpuwJyvF" class="btn btn-main">ติดต่อสอบถามผ่าน Discord 💬</a> 
+<div class="socials"> 
+<a href="https://www.facebook.com/share/1AvWGHHjGL/" target="_blank">Facebook</a> 
+<a href="https://discord.gg/eHcpuwJyvF" target="_blank">Discord</a> 
+</div> 
+<p class="small"> 
+© 2026 Dino kub | All Rights Reserved
+</p> 
+</div> 
+
+</div> 
+</body> 
+</html>
